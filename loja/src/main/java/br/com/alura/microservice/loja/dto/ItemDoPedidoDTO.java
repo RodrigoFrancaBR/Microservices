@@ -1,4 +1,4 @@
-package br.com.alura.microservice.loja.controller.dto;
+package br.com.alura.microservice.loja.dto;
 
 public class ItemDoPedidoDTO {
 
