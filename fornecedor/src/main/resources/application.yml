@@ -1,8 +1,6 @@
 server:
   port: 8081
-  
-spring:  application:    name: 'ms-fornecedor'
-    
+       
 eureka:
   client:
     register-with-eureka: true
