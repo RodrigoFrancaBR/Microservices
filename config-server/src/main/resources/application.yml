@@ -2,12 +2,15 @@
 server:  port: 8888
   
 spring:
+ #profiles:
+  #active: native
  cloud:
     config:
       server:
-       default-label: main
-       git:
-         uri: https://github.com/RodrigoFrancaBR/microservice-repo
-         search-paths: fornecedor             
-               
+        #native:
+        default-label: main
+        git:
+          uri: https://github.com/RodrigoFrancaBR/microservice-repo
+          search-paths: fornecedor
+         #search-locations: d:/rodrigo/git_repo/Microservices/microservice-repo
          
