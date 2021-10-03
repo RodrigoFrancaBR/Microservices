@@ -9,7 +9,7 @@ import br.com.alura.microservice.loja.controller.dto.PedidoDTO;
 import br.com.alura.microservice.loja.service.PedidoService;
 
 @RestController
-@RequestMapping("/loja/pedido")
+@RequestMapping("/api/loja/pedido")
 public class PedidoController {
 
 	private PedidoService service;

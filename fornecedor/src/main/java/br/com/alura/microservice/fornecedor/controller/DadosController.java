@@ -8,7 +8,7 @@ import br.com.alura.microservice.fornecedor.model.DadosDoFornecedor;
 import br.com.alura.microservice.fornecedor.service.DadosService;
 
 @RestController
-@RequestMapping("/fornecedor/dados")
+@RequestMapping("api/fornecedor/dados")
 public class DadosController {
 	
 	
