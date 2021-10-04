@@ -4,22 +4,22 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.alura.microservice.fornecedor.model.DadosDoFornecedor;
-import br.com.alura.microservice.fornecedor.service.DadosService;
+import br.com.alura.microservice.fornecedor.model.Fornecedor;
+import br.com.alura.microservice.fornecedor.service.FornecedorService;
 
 @RestController
 @RequestMapping("api/fornecedor/dados")
-public class DadosController {
+public class FornecedorController {
 	
 	
-	private DadosService service;
+	private FornecedorService service;
 	
-	public DadosController(DadosService service) {
+	public FornecedorController(FornecedorService service) {
 		this.service = service;
 	}
 
 	@RequestMapping("/{estado}")
-	public DadosDoFornecedor obterDadosPorEstado(@PathVariable String estado) {
+	public Fornecedor obterDadosPorEstado(@PathVariable String estado) {
 		return service.obterDadosPorEstado(estado);		
 	}
 }
