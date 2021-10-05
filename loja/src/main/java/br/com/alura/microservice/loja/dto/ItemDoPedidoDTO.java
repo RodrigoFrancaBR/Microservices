@@ -22,9 +22,4 @@ public class ItemDoPedidoDTO {
 		this.quantidade = quantidade;
 	}
 
-	@Override
-	public String toString() {
-		return "ItemDoPedidoDTO [id=" + id + ", quantidade=" + quantidade + "]";
-	}
-
 }

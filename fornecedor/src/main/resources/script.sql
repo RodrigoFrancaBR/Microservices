@@ -1,1 +1,1 @@
-insert into dados_do_fornecedor(id, endereco, estado,nome) values (1, 'endereço do fornecedor de GO', 'GO', 'Fornecedor de GO')
+insert into tb_fornecedor(id, endereco, estado,nome) values (1, 'endereço do fornecedor de GO', 'GO', 'Fornecedor de GO')	

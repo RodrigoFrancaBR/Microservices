@@ -21,12 +21,14 @@ public class PedidoController {
 	public PedidoController(PedidoService service) {
 		this.service = service;
 	}
-
+    
+	// certo é devolver um pedidoDTO
 	@RequestMapping(method = RequestMethod.POST)
-	public Pedido realizarPedido(@RequestBody List<ItemDoPedidoDTO> produtos) {
-		return service.realizarPedido(produtos);
+	public Pedido realizarPedido(@RequestBody List<ItemDoPedidoDTO> itens) {
+		return service.realizarPedido(itens);
 	}
-	
+
+	// certo é devolver um pedidoDTO	
 	@RequestMapping("/{id}")
 	public Pedido getPedidoPorId(@PathVariable Long id) {
 		return service.obterPedidoPorId(id);

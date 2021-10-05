@@ -5,7 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.alura.microservice.loja.dto.PedidoDTO;
+import br.com.alura.microservice.loja.dto.PedidoDeVendaDTO;
+import br.com.alura.microservice.loja.dto.VendaDTO;
 import br.com.alura.microservice.loja.service.PedidoService;
 
 @RestController
@@ -19,7 +20,7 @@ public class PedidoController {
 	}
 
 	@RequestMapping(method = RequestMethod.POST)
-	public void realizarPedido(@RequestBody PedidoDTO pedido) {
-		service.realizarPedido(pedido);
+	public VendaDTO realizarPedido(@RequestBody PedidoDeVendaDTO pedido) {
+		return service.realizarPedido(pedido);
 	}
 }

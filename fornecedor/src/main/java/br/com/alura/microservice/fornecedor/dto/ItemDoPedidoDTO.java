@@ -21,4 +21,11 @@ public class ItemDoPedidoDTO {
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
+
+	@Override
+	public String toString() {
+		return "ItemDoPedidoDTO [id=" + id + ", quantidade=" + quantidade + "]";
+	}
+	
+	
 }
