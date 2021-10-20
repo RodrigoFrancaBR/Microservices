@@ -1,0 +1,107 @@
+{
+	"variables": [],
+	"info": {
+		"name": "curso-microservices",
+		"_postman_id": "186d5dc8-6718-2379-c661-f227eb72fae7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fornecedor",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:8081/fornecedor/dados/go",
+					"request": {
+						"url": "http://localhost:8081/api/fornecedor/dados/go",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8081/fornecedor/produtos/go",
+					"request": {
+						"url": "http://localhost:8081/api/fornecedor/produtos/df",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/fornecedor/pedido",
+					"request": {
+						"url": "http://localhost:8081/api/fornecedor/pedido",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n{\n\t\t\"id\":1,\n\t\t\"quantidade\": 5\n}, \n{\n\t\t\"id\":2,\n\t\t\"quantidade\": 10\n}, \n{\n\t\t\"id\":3,\n\t\t\"quantidade\": 15\n}\n]\n"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "loja",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:8080/loja/pedido",
+					"request": {
+						"url": "http://localhost:8080/api/loja/pedido",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"itens\":[\r\n      {\r\n         \"id\":1,\r\n         \"quantidade\":5\r\n      },\r\n      {\r\n         \"id\":2,\r\n         \"quantidade\":10\r\n      },\r\n      {\r\n         \"id\":3,\r\n         \"quantidade\":15\r\n      }\r\n   ],\r\n   \"endereco\":{\r\n      \"rua\":\"Rua da Maria\",\r\n      \"numero\":153,\r\n      \"estado\":\"GO\"\r\n   }\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8761/eureka/apps",
+			"request": {
+				"url": "http://localhost:8761/eureka/apps",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/ms-fornecedor/dev",
+			"request": {
+				"url": "http://localhost:8888/ms-fornecedor/dev",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
